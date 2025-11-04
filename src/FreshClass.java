@@ -3,45 +3,43 @@ import java.util.Arrays;
 public class FreshClass {
 
     public static void main(String[] args) {
+        int[] arr = {1, 0, 3, 0, 4, 0};
         int[] arr1 = {9, 9, 9};
         int[] arr2 = {0, 0, 0, 1};
-        //printArrayInformation(arr1, arr);
-        //printArray(arr, arr1);
-        //printArrayInReverse(arr);
-        //justTestWhatLoopInsideLoopMeans();
-        //addArrays(arr1, arr2);
-        //System.out.println();
-        //System.out.println(getSecondLargestElement(arr));
+        printArrayInformation(arr1, arr);
+        printArray(arr, arr1);
+        printArrayInReverse(arr);
+        justTestWhatLoopInsideLoopMeans();
+        addArrays(arr1, arr2);
+        System.out.println();
+        System.out.println(getSecondLargestElement(arr));
 
 
-        //reverseArray(arr);
+        reverseArray(arr);
 
-        //for (int i = 0; i < arr.length; i++) {
-        // System.out.print(arr[i] + " ");
-        //}
-        //System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+        System.out.print(arr[i] + " ");
+        }
+        System.out.println();
 
-        //System.out.println(getThirdLargestElement(arr));
-        //int k = 3;
+        System.out.println(getThirdLargestElement(arr));
+        int k = 3;
 
-        //reverseInGroups(arr, k);
-        // for (int num : arr) {
-        // System.out.print(num + " ");
-        //int k = 3;
+        reverseInGroups(arr, k);
+         for (int num : arr) {
+         System.out.print(num + " ");
 
-
-        //}
-        int[] arr = {1, 0, 3, 0, 4, 0};
-       /* arr = getRotateClockwise(arr, 3);
+         }
+       arr = getRotateClockwise(arr, 3);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-        System.out.println();*/
-        /*System.out.println(getMaxiumProductOfTriplet(arr));
-        arr = getAllZeroesAtEnd(arr);
+        System.out.println();
+        System.out.println(getMaxiumProductOfTriplet(arr));
+        arr = getZeroesAtEnd(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
-        }*/
+        }
         arr=getZeroesAtEnd1(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
@@ -351,5 +349,5 @@ public class FreshClass {
         }
         return arr;
     }
-    
+
 }
