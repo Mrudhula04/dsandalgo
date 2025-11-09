@@ -28,15 +28,18 @@ public class Editor {
             System.out.println("editor is empty");
             return "-1";
         }
-        top--;
-        print();
         if(top>=0) {
             pushIntoTempStack(arr[top]);
-            return arr[top];
+            String removed = arr[top];
+            top--;
+            print();
+            return removed;
         }
         else {
             return "-1";
         }
+
+
     }
     public void pushIntoTempStack(String input){
         if (isFull_temp()) {
@@ -61,14 +64,9 @@ public class Editor {
             System.out.println("Temporary Stack Underflow");
             return "-1";
         }
+        String removed = arr_temp[top_temp];
         top_temp--;
-        if(top_temp>=0) {
-            return arr_temp[top_temp];
-        }
-        else{
-            System.out.println("nothing to pop");
-            return "-1";
-        }
+        return removed;
 
     }
     public void print(){
@@ -142,9 +140,17 @@ public class Editor {
         System.out.println();
         editor.undo();
         System.out.println();
+        editor.undo();
+        System.out.println();
+        editor.undo();
+        System.out.println();
 
 
-       System.out.println();
+        System.out.println();
+        editor.redo();
+        System.out.println();
+        editor.redo();
+        System.out.println();
         editor.redo();
         System.out.println();
         editor.redo();
@@ -153,9 +159,32 @@ public class Editor {
         System.out.println();
 
 
+        editor.undo();
+        System.out.println();
+        editor.undo();
+        System.out.println();
+        editor.undo();
+        System.out.println();
+        editor.undo();
+        System.out.println();
 
 
 
+
+
+
+
+        System.out.println();
+        editor.redo();
+        System.out.println();
+        editor.redo();
+        System.out.println();
+        editor.redo();
+        System.out.println();
+        editor.redo();
+        System.out.println();
+        editor.redo();
+        System.out.println();
 
 
         /*editor.undo();
