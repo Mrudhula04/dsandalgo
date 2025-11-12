@@ -119,96 +119,33 @@ public class Editor {
     }
 
     public static void main(String[] args) {
-        Editor editor = new Editor(5);
+        Editor editor = new Editor(6);
 
-        editor.type("Mrudu");
+        editor.type("I ");
         System.out.println();
-        editor.type("devansh");
+        editor.type("am ");
         System.out.println();
-        editor.type("sridevi");
+        editor.type("sneha ");
         System.out.println();
-        editor.type("sneha");
+        editor.type("angajala ");
         System.out.println();
-        editor.type("durga");
+        //editor.type("durga");
         System.out.println();
         //editor.print();
         //System.out.println("Peek: " + stack.peek());
         System.out.println();
         editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-
 
         System.out.println();
-        editor.redo();
+        editor.type(", devansh's ");
         System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-
-
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-
-
-
-
-
-
-
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-
-
-        /*editor.undo();
-        System.out.println();
-        editor.undo();
-        System.out.println();
-        editor.undo();
+        editor.type("mum ");
         System.out.println();
         editor.undo();
         System.out.println();
         editor.redo();
         System.out.println();
         editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();
-        editor.redo();
-        System.out.println();*/
 
     }
 
