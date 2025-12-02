@@ -19,7 +19,7 @@ public class RemoveMiddleFromStack {
         Stack<Integer> temp = new Stack<>();
         int mid = stack.size() / 2;
         
-        for (int i = 0; i < mid; i++) {
+        for (int i = mid-1; i >= 0; i--) {
             temp.push(stack.pop());
         }
         
