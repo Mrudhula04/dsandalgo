@@ -74,9 +74,12 @@ public class MyIntStack {
             s.push(40);
             s.pop();
             s.pop();
+            s.pop();
             System.out.println("Min: " + s.getMin());
         } catch (MrudusStackOverflowException | MrudusStackUnderflowException e) {
             System.err.println(e.getMessage());
         }
     }
+
+
 }
